@@ -1,3 +1,4 @@
+
 public class BubbleSort {
     public static int[] sort(int[] array) {
         for (int i = 0; i < array.length; i++) {
@@ -16,7 +17,6 @@ public class BubbleSort {
     }
 
     public static void main(String[] args) {
-
         int[] src = {8, 4, 6, 2, 5, 7, 3, 9, 1};
         int[] dest = BubbleSort.sort(src);
         for (int num : dest) {
