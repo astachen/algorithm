@@ -2,14 +2,15 @@ public class SelectionSort {
     public static int[] sort(int[] array) {
         for (int i = 0; i < array.length - 1; i++) {
             int minIndex = i;
-            boolean swap = false;
+            //
             for (int j = i + 1; j < array.length; j++) {
                 if(array[j] < array[minIndex] ) {
                     minIndex = j;
-                    swap = true;
+
                 }
             }
-            if (swap) {
+            // swap the array[minIndex] and array[i]
+            if (minIndex != i) {
                 int temp = array[i]; array[i] = array[minIndex]; array[minIndex] = temp;
             }
         }
